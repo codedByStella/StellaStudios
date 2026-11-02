@@ -1,0 +1,8 @@
+2025-11-24 01:08:50 [DEBUG] [engine.detail.UPLOADER-DAEMON] [UPLOADER-DAEMON] Built Late CSV at [REDACTED — temporary file path] for '[REDACTED — media title]'
+2025-11-24 01:08:53 [ERROR] [engine.detail.UPLOADER-DAEMON] [UPLOADER-DAEMON] Late reported invalid rows: {'total': 1, 'valid': 0, 'invalid': 1, 'results': [{'rowIndex': 1, 'ok': False, 'errors': ['TikTok Image 1: Failed to validate TikTok image: unrecognized file format']}], 'warnings': []}
+2025-11-24 01:08:53 [ERROR] [engine.detail.UPLOADER-DAEMON] [UPLOADER-DAEMON] Late scheduling failed; keeping video in pending: [REDACTED — production filesystem path]
+2025-11-24 01:09:25 [DEBUG] [engine.detail.UPLOADER-DAEMON] [UPLOADER-DAEMON] Built Late CSV at [REDACTED — temporary file path] for '[REDACTED — media title]'
+
+# REDACTED — subsequent duplicate CSV-build entries omitted.
+# The same failure/retry pattern continued at approximately 34-second intervals.
+# Original log continued through 02:10:36.
