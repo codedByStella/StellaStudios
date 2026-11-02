@@ -1,0 +1,13 @@
+{
+  "font": "REDACTED — server-specific font path",
+  "text": "REDACTED — production watermark identity",
+  "fontsize": 48,
+  "fontcolor": "#FFF5FFD9",
+  "borderw": 2,
+  "bordercolor": "#FFA0FF80",
+  "shadowcolor": "#0000002D",
+  "shadowx": 1,
+  "shadowy": 2,
+  "x": "w-text_w-40",
+  "y": "h-text_h-40"
+}
