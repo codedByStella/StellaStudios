@@ -1,0 +1,7 @@
+{
+  "model": "gpt-5.1",
+  "generation": {
+    "temperature": 0.75,
+    "max_completion_tokens": 1500
+  }
+}
