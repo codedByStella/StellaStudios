@@ -1,0 +1,100 @@
+{
+  "output_requirements": {
+    "format": {
+      "type": "json_object",
+      "required_keys": ["title", "description", "video", "voice", "music"],
+      "no_additional_top_level_keys": true,
+      "no_prefix_or_suffix_text": true,
+      "no_trailing_commas": true,
+      "no_escaped_newlines_in_values": true,
+      "forbidden_characters_in_values": ["|", "="]
+    },
+    "fields": {
+      "title": {
+        "type": "string",
+        "word_count_range": [3, 6],
+        "exact_single_emoji_at_end": true,
+        "no_punctuation_except_final_emoji": true,
+        "ascii_only_except_emoji": true,
+        "forbidden_characters": ["|", "="]
+      },
+      "description": {
+        "type": "string",
+        "sentence_count_range": [1, 2],
+        "required_hashtags_range": [2, 3],
+        "ascii_only": true,
+        "forbidden_characters": ["|", "="]
+      },
+      "video": {
+        "type": "string",
+        "ascii_only": true,
+        "forbidden_characters": ["|", "="],
+        "must_include": {
+          "vertical_format": "9:16",
+          "no_people_or_beings": true,
+          "continuous_environment": true,
+          "readable_spatial_structure": true,
+          "unified_lighting": true,
+          "consistent_motion": true,
+          "explicit_palette": ["warm", "cool"],
+          "explicit_audio_presence_phrase": "soft ambient environmental audio at medium-low volume",
+          "emotionally_safe_soft_grounded": true,
+          "no_scene_transitions": true
+        },
+        "must_avoid": [
+          "itemized_lists_of_objects",
+          "enumerated_scenery",
+          "specific_named_landmarks",
+          "list_like_name_sequences",
+          "texture_slur",
+          "muddy_or_formless_visuals",
+          "unclear_or_impossible_geometry",
+          "surreal_slush"
+        ]
+      },
+      "voice": {
+        "type": "string",
+        "ascii_only": true,
+        "forbidden_characters": ["|", "="],
+        "word_count_range": [8, 20],
+        "must_begin_with": "[whisper]",
+        "fragment_structure": "1-3 fragments separated by commas or ellipses",
+        "must_avoid": [
+          "generic_ASMR_cliches",
+          "stock_calming_lines"
+        ]
+      },
+      "music": {
+        "type": "string",
+        "ascii_only": true,
+        "forbidden_characters": ["|", "="],
+        "word_count_range": [10, 20],
+        "must_avoid": [
+          "explicit_genre_names",
+          "artist_names",
+          "bpm_numbers",
+          "technical_audio_terms",
+          "harsh_or_dissonant_descriptions",
+          "aggressive_or_chaotic_imagery"
+        ],
+        "description_focus": [
+          "mood",
+          "motion",
+          "texture",
+          "emotional_tone"
+        ]
+      }
+    },
+    "validation": {
+      "json_must_be_well_formed": true,
+      "all_required_keys_present": true,
+      "no_extra_top_level_keys": true,
+      "title_word_count_must_be_in_range": true,
+      "description_sentence_count_must_be_in_range": true,
+      "description_hashtag_count_must_be_in_range": true,
+      "voice_word_count_must_be_in_range": true,
+      "music_word_count_must_be_in_range": true,
+      "title_must_have_one_emoji_at_end": true
+    }
+  }
+}
