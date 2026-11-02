@@ -1,0 +1,11 @@
+UNIT                                           LOAD   ACTIVE SUB     DESCRIPTION
+snap.amazon-ssm-agent.amazon-ssm-agent.service loaded active running Service for snap application amazon-ssm-agent.amazon-ssm-agent
+
+# REDACTED — 22 unrelated system services omitted.
+
+LOAD   = Reflects whether the unit definition was properly loaded.
+ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
+SUB    = The low-level unit activation state, values depend on unit type.
+
+# Original inventory: 23 loaded units listed.
+# REDACTED — unrelated host service inventory.
