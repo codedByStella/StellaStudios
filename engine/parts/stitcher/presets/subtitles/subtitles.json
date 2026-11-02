@@ -1,0 +1,29 @@
+{
+  "font_family": "REDACTED — server-specific font installation path",
+  "font_size": 48,
+
+  "color": "#FFF8FFE8",
+  "opacity": 1.0,
+
+  "shadow_color": "#00000055",
+  "shadow_x": 0,
+  "shadow_y": 3,
+
+  "outline_color": "#FF9BF9E6",
+  "outline_thickness": 2.2,
+
+  "position": "bottom-center",
+  "vertical_offset": 0.92,
+
+  "fade_in_duration": 0.12,
+  "fade_out_duration": 0.18,
+
+  "letter_spacing": 0.8,
+  "line_spacing": 4,
+
+  "enable_box": false,
+  "box_color": "#00000000",
+  "box_opacity": 0.0,
+
+  "animation": "fade"
+}
