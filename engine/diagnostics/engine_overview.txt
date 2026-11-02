@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "[REDACTED — production path]/engine/daemons/uploader/daemon.py", line 38, in <module>
+    LATE_API_KEY = get_secret("LATE_API_KEY")
+  File "[REDACTED — production path]/engine/parts/core/secrets.py", line 80, in get_secret
+    raise RuntimeError(f"Missing required secret: {name}")
+RuntimeError: Missing required secret: LATE_API_KEY
+
+# REDACTED — four duplicate startup tracebacks omitted.
